@@ -3,3 +3,4 @@ encore.gen.cue
 /.encore
 
 frontend/node_modules/
+frontend/.next/

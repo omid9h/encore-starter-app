@@ -32,9 +32,9 @@ export default async function Home() {
         </a>
 
         <a
-            href="https://auth0.com/docs"
-            className={styles.card}
-            target="_blank"
+          href="https://auth0.com/docs"
+          className={styles.card}
+          target="_blank"
         >
           <h2>
             Auth0 Docs <span>-&gt;</span>
@@ -47,7 +47,7 @@ export default async function Home() {
             Local Dev Dash <span>-&gt;</span>
           </h2>
           <p>
-            Access Encore's local development dashboard when running Encore
+            Access Encore local development dashboard when running Encore
             locally.
           </p>
         </a>
