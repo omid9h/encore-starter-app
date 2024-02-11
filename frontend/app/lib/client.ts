@@ -10,7 +10,7 @@
  */
 export type BaseURL = string
 
-export const Local: BaseURL = "https://staging-starter-49p.encr.app"
+export const Local: BaseURL = "https://staging-starter-49p2.encr.app"
 
 /**
  * Environment returns a BaseURL for calling the cloud environment with the given name.
