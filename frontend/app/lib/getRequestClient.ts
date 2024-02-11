@@ -10,7 +10,7 @@ const getRequestClient = () => {
   const token = cookies().get("auth-token")?.value;
   const env =
     process.env.NODE_ENV === "development"
-      ? "http://127.0.0.1:4000"
+      ? "https://staging-starter-49p.encr.app"
       : Environment("staging");
 
   return new Client(env, {
