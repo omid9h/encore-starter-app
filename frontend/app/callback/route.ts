@@ -1,4 +1,4 @@
-import {cookies} from "next/headers";
+import { cookies } from "next/headers";
 import getRequestClient from "@/app/lib/getRequestClient";
 
 export async function GET(req: Request) {
@@ -8,15 +8,15 @@ export async function GET(req: Request) {
     const state = searchParams.get("state");
 
     if (typeof state !== "string") {
-        return Response.redirect("http://localhost:3000/error");
+        return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/error");
     }
     if (state != cookies().get("state")?.value) {
-        return Response.redirect("http://localhost:3000/error");
+        return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/error");
     }
 
     const code = searchParams.get("code");
     if (typeof code !== "string") {
-        return Response.redirect("http://localhost:3000/error");
+        return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/error");
     }
 
     try {
@@ -25,9 +25,9 @@ export async function GET(req: Request) {
             code: code,
         });
         cookies().set("auth-token", response.token);
-        return Response.redirect("http://localhost:3000/users");
+        return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/users");
     } catch (error) {
         console.error(error);
-        return Response.redirect("http://localhost:3000/error");
+        return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/error");
     }
 }

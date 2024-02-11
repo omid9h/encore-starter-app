@@ -14,6 +14,6 @@ export async function POST(req: Request) {
     return Response.redirect(response?.redirect_url);
   } catch (error) {
     console.error(error);
-    return Response.redirect("http://localhost:3000/error");
+    return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/error");
   }
 }

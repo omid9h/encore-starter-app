@@ -2,10 +2,11 @@ package auth
 
 import (
 	"context"
+	"net/url"
+
 	"encore.dev/beta/auth"
 	"encore.dev/beta/errs"
 	"github.com/coreos/go-oidc/v3/oidc"
-	"net/url"
 )
 
 //encore:service
@@ -98,7 +99,7 @@ func (s *Service) Logout(ctx context.Context) (*LogoutResponse, error) {
 		}
 	}
 
-	returnTo, err := url.Parse("http://localhost:3000")
+	returnTo, err := url.Parse("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app")
 	if err != nil {
 		return nil, &errs.Error{
 			Code:    errs.Internal,
