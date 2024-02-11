@@ -24,9 +24,9 @@ You need the following information:
 
 Open the configuration file at `backend/auth/encore.cue` and add values from the Auth0 dashboard.
 
-A callback URL is a URL in your application where Auth0 redirects the user after they have authenticated. The callback URL for your app must be added to the Allowed Callback URLs field in your Application Settings. For this example, the callback URL is `https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/callback`.
+A callback URL is a URL in your application where Auth0 redirects the user after they have authenticated. The callback URL for your app must be added to the Allowed Callback URLs field in your Application Settings. For this example, the callback URL is `https://encore-starter-app-bp.vercel.app/callback`.
 
-A logout URL is a URL in your application that Auth0 can return to after the user has been logged out of the authorization server. This is specified in the returnTo query parameter. The logout URL for your app must be added to the Allowed Logout URLs field in your Application Settings. For this example, the logout URL is `https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/`.
+A logout URL is a URL in your application that Auth0 can return to after the user has been logged out of the authorization server. This is specified in the returnTo query parameter. The logout URL for your app must be added to the Allowed Logout URLs field in your Application Settings. For this example, the logout URL is `https://encore-starter-app-bp.vercel.app/`.
 
 ### Running locally
 
@@ -42,7 +42,7 @@ npm install
 npm run dev
 ```
 
-Open [https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app](https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app) in your browser to see the result.
+Open [https://encore-starter-app-bp.vercel.app](https://encore-starter-app-bp.vercel.app) in your browser to see the result.
 
 ### Encore's Local Development Dashboard
 

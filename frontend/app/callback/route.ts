@@ -8,15 +8,15 @@ export async function GET(req: Request) {
     const state = searchParams.get("state");
 
     if (typeof state !== "string") {
-        return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/error");
+        return Response.redirect("https://encore-starter-app-bp.vercel.app/error");
     }
     if (state != cookies().get("state")?.value) {
-        return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/error");
+        return Response.redirect("https://encore-starter-app-bp.vercel.app/error");
     }
 
     const code = searchParams.get("code");
     if (typeof code !== "string") {
-        return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/error");
+        return Response.redirect("https://encore-starter-app-bp.vercel.app/error");
     }
 
     try {
@@ -25,9 +25,9 @@ export async function GET(req: Request) {
             code: code,
         });
         cookies().set("auth-token", response.token);
-        return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/users");
+        return Response.redirect("https://encore-starter-app-bp.vercel.app/users");
     } catch (error) {
         console.error(error);
-        return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/error");
+        return Response.redirect("https://encore-starter-app-bp.vercel.app/error");
     }
 }

@@ -10,7 +10,7 @@ export async function GET(req: Request) {
     cookies().set("state", response.state);
   } catch (error) {
     console.error(error);
-    return Response.redirect("https://encore-starter-app-7zxeq0hj1-omids-projects-9a863d31.vercel.app/error");
+    return Response.redirect("https://encore-starter-app-bp.vercel.app/error");
   }
 
   console.log(response?.auth_code_url)
